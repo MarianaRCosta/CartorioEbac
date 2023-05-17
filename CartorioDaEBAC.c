@@ -140,6 +140,7 @@ int deletar()//Função responsável por deletar os usuários no sistema
 	system("pause");          //Congela a tela para que ela não saia do local até uma tecla ser precionada
 }
 
+
 int main()
 
 {
@@ -159,9 +160,10 @@ int main()
 	
 	    printf("\t1-  Registrar nomes\n");
 	    printf("\t2-  Consultar nomes\n");
-	    printf("\t3-  Deletar nomes\n\n");
+	    printf("\t3-  Deletar nomes\n");
+	    printf("\t4-  Sair do sistema\n\n")
 	
-	    printf("Esse Software é de livre uso dos alunos.\n\n"); 
+	    ;printf("Esse Software é de livre uso dos alunos.\n\n"); 
 	
 	    printf("Escolha a opção:");//Fim do menu
 	
@@ -187,7 +189,12 @@ int main()
 		    deletar();//chamada de funções
 		    break;
 		    
-		    default: //Função para caso nenhum dos cases seja selecionado
+		    case 4:
+		    printf("\n\nObrigado por utilizar o sistema!\n\n");
+		    return 0;
+		    break;
+		    
+		    ;default: //Função para caso nenhum dos cases seja selecionado
 		    printf("Essa opção não está disponível.\n");
 		    system("pause");
 		    break;
